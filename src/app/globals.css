@@ -1,0 +1,580 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "OfeliaBold";
+  src: url("/fonts/Ofelia_Text_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OfeliaMedium";
+  src: url("/fonts/Ofelia_Text_Medium.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OfeliaRegular";
+  src: url("/fonts/Ofelia_Text_Regular.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  -webkit-tap-highlight-color: rgb(154, 193, 79) !important;
+}
+strong,
+a {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+:root {
+  --c-1: #37441b;
+  --c-2: #9ac14f;
+  --c-3: #d6db89;
+  --c-4: #6d8f05;
+  --c-5: #f0faed;
+  --c-6: #dcd680;
+  --c-7: #26501a;
+  --c-w: #ffffff;
+  --c-b: #000000;
+  --c-wb: #ffffff99;
+}
+
+body {
+  @apply bg-(--c-5) text-(--c-1) w-[100%] max-w-[100%] overflow-x-hidden overflow-y-scroll;
+}
+::selection {
+  @apply bg-(--c-2)!;
+}
+::-moz-selection {
+  background-color: var(--c-2) !important;
+}
+#contact {
+  scroll-margin-top: 120px;
+}
+.Mob-banner-container,
+.mob-divide-line-box,
+.mobile-inner-bg,
+.no-desktop {
+  @apply hidden;
+}
+/* header */
+.header {
+  @apply fixed top-10.5 left-0 w-full z-99 px-9;
+}
+.header-inner {
+  @apply w-full bg-(--c-wb) flex items-center justify-end gap-10 rounded-2xl py-5 px-17;
+  backdrop-filter: blur(14.800000190734863px);
+}
+.logo-pic {
+  @apply absolute left-[45%];
+}
+.header-inner a {
+  @apply text-2xl text-(--c-w) bg-(--c-1) flex items-center px-5.5 py-3.5 rounded-xl gap-3 hover:bg-(--c-7) transition-all duration-700 ease-in-out;
+  font-family: "OfeliaRegular", sans-serif;
+}
+/* header */
+
+/* homepage */
+.main-container {
+  @apply mt-66 w-full flex flex-col items-center justify-start;
+}
+/* homepage */
+
+/* Herro-banner */
+.hero-banner-container {
+  @apply w-full h-auto flex items-center justify-center px-18 mb-20;
+}
+.hero-banner-box {
+  @apply w-full h-175.25 rounded-4xl px-6 py-21.5 flex items-start justify-start bg-cover bg-center relative;
+}
+.banner-heading-bg-box {
+  @apply h-20.25 w-[calc(100%-3rem)] bg-(--c-wb) absolute -top-8 left-6 z-40 rounded-sm;
+  backdrop-filter: blur(14.800000190734863px) !important;
+}
+.heroBanner_heading {
+  @apply text-(--c-1) text-[7.125rem] leading-25.75 text-nowrap w-full absolute z-50 -top-20 left-7;
+  font-family: "OfeliaBold", sans-serif;
+}
+.desc-box-home-banner-box {
+  @apply text-left text-[1.325rem] p-2 bg-(--c-w) rounded-4xl text-(--c-1) w-[35%];
+}
+.desc-box-home-banner-txt {
+  @apply p-4 w-full text-wrap rounded-[1.625rem] border-2 border-(--c-6);
+  font-family: "OfeliaRegular", sans-serif;
+}
+.herro-overlay-image {
+  @apply absolute right-48 -bottom-21 md:block;
+}
+/* Herro-banner */
+
+/* ingredients-container */
+.ingredients-container {
+  @apply w-full px-18 pt-26 flex flex-col gap-30 relative;
+}
+.ingredients-container h3 {
+  @apply text-[4rem] text-(--c-1) w-[85%] leading-[74px];
+  font-family: "OfeliaRegular", "Segoe UI", Arial, sans-serif;
+}
+.ingredients-container h3 b {
+  @apply text-[4rem] text-(--c-1) leading-[74px];
+  font-family: "ofeliaBold", "Segoe UI", Arial, sans-serif;
+}
+.quality-percentage-subheading-description-descriptionicon {
+  @apply flex items-start gap-8 mt-4;
+}
+.percentage-subheading {
+  @apply w-[55%];
+}
+.percentage-subheading {
+  @apply flex flex-col items-start justify-start;
+}
+.percentage-subheading span {
+  @apply flex flex-col justify-end items-end w-full;
+}
+.percentage-number {
+  @apply text-[25rem] text-(--c-1) leading-80.5;
+  font-family: "OfeliaBold", sans-serif;
+}
+.subheading {
+  @apply text-[3.125rem] relative text-(--c-1) w-[85%] mt-4 leading-[74px] flex items-end justify-end;
+  font-family: "OfeliaMedium", "Segoe UI", Arial, sans-serif;
+}
+.pargraph-pargraphicon {
+  @apply w-[45%];
+}
+.ingredient-curve-arrow {
+  @apply absolute left-46 bottom-20;
+}
+.pargraph-pargraphicon {
+  @apply flex flex-col gap-37 items-end justify-end mt-20 relative;
+}
+.pargraph-pargraphicon p {
+  @apply text-[1.4125rem] text-(--c-1) leading-10;
+  font-family: "OfeliaRegular", sans-serif;
+}
+.pargraph-pargraphicon p strong {
+  @apply text-[1.6125rem] text-(--c-1) leading-10;
+  font-family: "OfeliaBold", sans-serif;
+}
+.pargraphicon {
+  @apply flex items-center gap-10;
+}
+.design-line {
+  @apply h-[7px] bg-(--c-2) rounded-sm;
+}
+.design-line1 {
+  @apply w-[539px] absolute bottom-17 right-23;
+}
+.design-line2 {
+  @apply w-[457px] absolute -bottom-3 right-36;
+}
+.design-line3 {
+  @apply w-[295px] h-px bg-(--c-1) flex;
+}
+/* ingredients-container */
+
+/* Nutrition-Values */
+.Nutrition-Values {
+  @apply w-full px-17 pb-20 flex flex-col gap-20 mt-29;
+}
+.Nutrition-Values-inner-Box {
+  @apply w-full flex flex-col items-start justify-start p-10.75 gap-100 bg-(--c-2) rounded-4xl h-310.5;
+}
+.nutriton-heading-subheading-paragraph-box {
+  @apply flex items-start justify-between gap-8;
+}
+.nutriton-heading-subheading {
+  @apply flex flex-col gap-5 p-8 text-(--c-1) border-2 border-(--c-1) rounded-4xl;
+}
+.nutriton-heading-subheading h4 {
+  @apply text-[4rem] leading-16;
+  font-family: "OfeliaBold", sans-serif;
+}
+.nutriton-heading-subheading p {
+  @apply text-[3.375rem] leading-13.5;
+  font-family: "OfeliaMedium", sans-serif;
+}
+.nutriton-heading-paragraph {
+  @apply text-xl w-[34.5%] text-[1.5rem] pt-8;
+  font-family: "OfeliaRegular", sans-serif;
+}
+.graph-section-nutrition-box {
+  @apply w-full flex items-center justify-center relative;
+}
+.avocado-outline-nutrants-pic {
+  @apply w-[631px] h-[919px];
+}
+.graph-data-value {
+  @apply absolute flex flex-col gap-1 justify-end items-end;
+}
+.vac-pic,
+.vector-mark {
+  @apply absolute select-none;
+}
+.vac-pic1 {
+  @apply left-110 bottom-114.75;
+}
+.vac-pic2 {
+  @apply left-124 bottom-185.75;
+}
+.vac-pic3 {
+  @apply left-165 bottom-162.75;
+}
+.vac-pic4 {
+  @apply left-217 bottom-197.75;
+}
+.vac-pic5 {
+  @apply left-227 bottom-149.75;
+}
+.vac-pic6 {
+  @apply left-261 bottom-92.75;
+}
+.vector-mark {
+  @apply bg-(--c-1) text-(--c-5) text-[1rem] font-bold rounded-full flex flex-col items-center justify-center;
+  font-family: "OfeliaBold", sans-serif;
+}
+.vector-mark1 {
+  @apply left-107 bottom-132.75 px-2 py-1.5;
+}
+.vector-mark2 {
+  @apply left-118 bottom-196.75 px-2 py-1.5;
+}
+.vector-mark3 {
+  @apply left-160 bottom-272.75 px-2 py-1.5;
+}
+.vector-mark4 {
+  @apply left-241 bottom-242.75 px-2 py-1.5;
+}
+.vector-mark5 {
+  @apply left-284 bottom-192.75 px-2 py-1.5;
+}
+.vector-mark6 {
+  @apply left-300 bottom-150.75 px-2 py-1.5;
+}
+.graph-data-value span {
+  @apply flex items-center justify-start gap-2;
+}
+.graph-data-value1,
+.graph-data-value2,
+.graph-data-value3 {
+  @apply flex items-end justify-end gap-2;
+}
+.graph-data-value4,
+.graph-data-value4,
+.graph-data-value6 {
+  @apply flex items-start justify-start gap-2;
+}
+.graph-data-value span strong {
+  @apply text-[2rem];
+  font-family: "OfeliaBold", sans-serif;
+}
+.graph-data-value span p,
+.extra-list-p {
+  @apply text-[1.5rem];
+  font-family: "OfeliaRegular", sans-serif;
+}
+.graph-data-value span svg {
+  @apply text-[1.5rem] select-none;
+  font-family: "OfeliaRegular", sans-serif;
+}
+.graph-data-value1 {
+  @apply left-42 bottom-131.75;
+}
+.graph-data-value2 {
+  @apply left-48 bottom-185.75;
+}
+.graph-data-value3 {
+  @apply left-75 bottom-262.75;
+}
+.graph-data-value4 {
+  @apply left-256 bottom-241.75;
+}
+.graph-data-value5 {
+  @apply left-298 bottom-191.75;
+}
+.graph-data-value6 {
+  @apply left-313 bottom-116.75;
+}
+.extra-list {
+  @apply flex items-center gap-2 justify-start flex-wrap w-full;
+}
+.extra-list-p {
+  @apply pl-7;
+}
+/* Nutrition-Values */
+
+/* preserves-box */
+.preserves-box {
+  @apply w-full flex flex-col justify-center items-center gap-38 mt-91.75;
+}
+.preserves-track-graph {
+  @apply w-full flex items-center justify-center gap-34.25 pl-30;
+}
+.preserves-track-graph div {
+  @apply flex flex-col gap-3 items-center justify-center;
+}
+.preserves-track-graph div svg {
+  @apply text-[1.5rem] text-(--c-2);
+}
+.preserves-track-graph div b {
+  @apply text-[1.5rem];
+  font-family: "OfeliaBold", sans-serif;
+}
+.preserves-detail-txt-box {
+  @apply w-full flex flex-col gap-2 items-start justify-start text-left px-60.5 mb-31.5;
+}
+.preserves-detail-txt-box p {
+  @apply text-[3rem];
+  font-family: "OfeliaRegular", sans-serif;
+}
+.preserves-detail-txt-box strong {
+  @apply text-[4.25rem] leading-22;
+  font-family: "OfeliaBold", sans-serif;
+}
+.divide-line-box {
+  @apply w-full h-px flex flex-col px-17 opacity-40;
+}
+.divide-line,
+.mob-divide-line {
+  @apply w-full h-px bg-(--c-1) px-17 opacity-40;
+}
+/* preserves-box */
+
+/* Enjoy */
+.Enjoy-avocrush-box {
+  @apply mt-109.5 relative px-17;
+}
+.enjoy-subheading {
+  @apply text-[9.375rem] absolute -top-74 left-88 leading-37.5;
+  font-family: "OfeliaRegular", sans-serif;
+}
+.heading-enjoy {
+  @apply text-[18.75rem] absolute left-40 -top-66.5 w-fit;
+  font-family: "OfeliaBold", sans-serif;
+}
+.Enjoy-avocrush-box img {
+  @apply rounded-4xl;
+}
+.jarr-image-headings-enjoy-box {
+  @apply w-fit absolute -bottom-40 left-42.25;
+}
+/* Enjoy */
+
+/* Taste-box-avocrush */
+.Taste-box-avocrush {
+  @apply w-full flex flex-col px-17 mt-47.5;
+}
+.Taste-box-avocrush .uper-heading-image-box {
+  @apply w-full gap-8 flex items-end justify-between mb-31.5;
+}
+.Taste-box-avocrush .uper-heading-image-box strong {
+  @apply text-[5.25rem] leading-23;
+  font-family: "OfeliaBold", sans-serif;
+}
+.Taste-box-avocrush .uper-heading-image-box img {
+  @apply w-full h-full rounded-4xl;
+}
+.down-descriptions-box {
+  @apply w-full flex items-start justify-between gap-15 mb-53.5 text-[1.125rem] text-(--c-1) pt-7;
+  font-family: "OfeliaRegular", sans-serif;
+}
+.down-descriptions-box p {
+  @apply w-1/2;
+}
+.taste-enddrop-descripton-heading-container {
+  @apply flex flex-col gap-0;
+}
+.taste-enddrop-descripton-heading-container
+  .taste-enddrop-descripton-heading-box {
+  @apply flex items-center justify-between py-8.5;
+}
+.taste-enddrop-descripton-heading-container
+  .taste-enddrop-descripton-heading-box
+  strong {
+  @apply text-[2.75rem] text-(--c-1) w-[58%];
+  font-family: "OfeliaBold", sans-serif;
+}
+.taste-enddrop-descripton-heading-container
+  .taste-enddrop-descripton-heading-box
+  span {
+  @apply flex items-start justify-start gap-3 w-[42%];
+}
+.taste-enddrop-descripton-heading-container
+  .taste-enddrop-descripton-heading-box
+  span
+  p {
+  @apply text-[1.25rem] text-(--c-1);
+  font-family: "OfeliaRegular", sans-serif;
+}
+/* Taste-box-avocrush */
+
+/* Market-avocrush-box */
+.Market-avocrush-box {
+  @apply w-full flex flex-col items-center justify-center gap-31.75 mt-50 relative;
+}
+.Market-avocrush-box {
+  @apply text-[5.25rem] w-[80%] text-center;
+  font-family: "OfeliaBold", sans-serif;
+}
+.marketpointstorepic {
+  @apply w-full flex items-center justify-center;
+}
+.marketpointstorepic img {
+  @apply rounded-4xl;
+}
+.marketpointstorepic img {
+  @apply w-full h-full;
+}
+.marketpointjarrpic {
+  @apply absolute -bottom-29 w-[750px] h-auto;
+}
+/* Market-avocrush-box */
+
+/* Partner-avocrush-box */
+.Partner-avocrush-box {
+  @apply mt-78.5 px-17 w-full flex flex-col items-start justify-start gap-0;
+}
+.Partner-avocrush-box .heading-section-partner-box {
+  @apply text-[4rem] leading-17 mb-19.5 w-full flex items-start justify-start;
+  font-family: "OfeliaBold", sans-serif;
+}
+.icon-with-heading-description-partner-box,
+.highlighted-heading-with-description {
+  @apply flex flex-col gap-0 w-full;
+}
+.icon-with-heading-description-partner-box div,
+.heading-descriptionwithhighlight-txt-box-partner {
+  @apply w-full flex items-start justify-between pt-10 pb-24;
+}
+.icon-with-heading-description-partner-box div strong,
+.icon-with-heading-description-partner-box div span,
+.heading-descriptionwithhighlight-txt-box-partner strong,
+.heading-descriptionwithhighlight-txt-box-partner p {
+  @apply w-1/2;
+}
+.icon-with-heading-description-partner-box div span {
+  @apply flex items-start justify-start gap-3;
+}
+.icon-with-heading-description-partner-box div strong {
+  @apply text-[2.75rem];
+  font-family: "OfeliaBold", sans-serif;
+}
+.icon-with-heading-description-partner-box div span p,
+.heading-descriptionwithhighlight-txt-box-partner p {
+  @apply text-[1.25rem];
+  font-family: "OfeliaRegular", sans-serif;
+}
+.heading-descriptionwithhighlight-txt-box-partner strong {
+  @apply bg-(--c-2) text-(--c-1) w-fit text-[2.875rem] rounded-2xl py-2 px-3;
+  font-family: "OfeliaRegular", sans-serif;
+}
+.heading-descriptionwithhighlight-txt-box-partner p {
+  @apply pl-10;
+}
+/* Partner-avocrush-box */
+
+/* Faq */
+.Faq-box {
+  @apply px-17 w-full h-auto flex flex-col gap-0 items-start justify-start;
+}
+.faq-bg-heading-box {
+  @apply flex w-full flex-col relative mb-76;
+}
+.faq-bg-heading-box img {
+  @apply rounded-4xl;
+}
+.faq-bg-heading-box strong {
+  @apply text-[12.5rem] absolute left-[40%] -bottom-42 select-none;
+  font-family: "OfeliaBold", sans-serif;
+}
+.faq-question-answer-box,
+.faq-question-ineerbox-answer-box {
+  @apply w-full flex flex-col gap-0 items-start justify-start;
+}
+.faq-question-ineerbox-answer-box .opner_heading-box-faq {
+  @apply w-full flex items-center justify-between py-4;
+}
+.faq-question-ineerbox-answer-box .opner_heading-box-faq strong,
+.faq-question-ineerbox-answer-box .opner_heading-box-faq svg {
+  @apply text-[2.75rem] cursor-pointer uppercase;
+  font-family: "OfeliaBold", sans-serif;
+}
+.opner_heading-box-faq {
+  @apply select-none;
+}
+.answer-question-faq {
+  @apply w-[60%] py-8;
+}
+.answer-question-faq p {
+  @apply w-full text-[1.25rem];
+  font-family: "OfeliaRegular", sans-serif;
+}
+/* Faq */
+
+/* contact-form-conatiner */
+.contact-form-conatiner {
+  @apply w-full flex flex-col px-17 gap-0 mt-[11.87rem];
+}
+.form-heading {
+  @apply text-[4rem] mb-0! w-fit!;
+  font-family: "OfeliaBold", sans-serif;
+}
+.contact-form-box {
+  @apply bg-(--c-1) w-full flex flex-col gap-17.5 rounded-4xl text-(--c-5) p-[5.3rem];
+}
+.contact-form-box div span,
+.contact-form-box span {
+  @apply relative w-full flex;
+}
+.contact-form-box div {
+  @apply flex items-center justify-center gap-17.5;
+}
+.contact-form-box input,
+.contact-form-box textarea {
+  @apply outline-none border-2 border-(--c-2) rounded-4xl w-full px-12 py-10 text-[1.25rem];
+  font-family: "OfeliaRegular", sans-serif;
+}
+.contact-form-box label {
+  @apply absolute text-[1.25rem] text-(--c-5) bg-(--c-1) p-4 select-none pointer-events-none -top-4 left-10;
+}
+.contact-form-box textarea {
+  @apply resize-none placeholder:text-(--c-5);
+}
+.contact-form-box button {
+  @apply w-fit px-4 py-3 rounded-lg flex items-center hover:bg-(--c-7) transition-all duration-700 ease-in-out justify-center gap-3 text-(--c-5) bg-(--c-4) text-[1.25rem] cursor-pointer;
+  font-family: "OfeliaBold", sans-serif;
+}
+.contact-heding-contact-book {
+  @apply flex items-center justify-start gap-16 mb-6;
+}
+.contact-heding-contact-book a {
+  @apply w-fit! text-[26px] text-(--c-1) py-4;
+  font-family: "OfeliaMedium", sans-serif;
+}
+.target-phone-link {
+  @apply border-x border-(--c-1) px-16!;
+}
+/* contact-form-conatiner */
+
+/* copyright-box */
+.copyright-box {
+  @apply w-full flex items-center justify-center mt-33.5 gap-10.5 mb-13.5 text-2xl;
+  font-family: "OfeliaMedium", sans-serif;
+}
+.socilamedia-icons {
+  @apply flex items-center justify-center gap-6.5;
+}
+/* copyright-box */
+
+/* 🔥 Chrome autofill remove */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #37441b inset !important; /* parent green */
+  -webkit-text-fill-color: #ffffff !important; /* text color */
+  transition: background-color 5000s ease-in-out 0s;
+}

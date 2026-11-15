@@ -1,0 +1,559 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "OfeliaBold";
+  src: url("/fonts/Ofelia_Text_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OfeliaMedium";
+  src: url("/fonts/Ofelia_Text_Medium.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OfeliaRegular";
+  src: url("/fonts/Ofelia_Text_Regular.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  -webkit-tap-highlight-color: rgb(154, 193, 79) !important;
+}
+strong,
+a {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+:root {
+  --c-1: #37441b;
+  --c-2: #9ac14f;
+  --c-3: #d6db89;
+  --c-4: #6d8f05;
+  --c-5: #f0faed;
+  --c-6: #dcd680;
+  --c-7: #26501a;
+  --c-w: #ffffff;
+  --c-b: #000000;
+  --c-wb: #ffffff99;
+}
+
+.contact-heding-contact-book {
+  @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-8 px-20 rounded-4xl w-full;
+}
+.name-and-arrow {
+  @apply flex items-center gap-10;
+}
+.contact-text-heading {
+  @apply text-[4rem];
+  font-family: "OfeliaBold", sans-serif;
+}
+.name-and-arrow img {
+  @apply w-[73px] h-[73px];
+}
+.other-contacts a {
+  @apply text-(--c-w) border-l border-l-(--c-w) pl-14 text-[26px];
+  font-family: "OfeliaRegular", sans-serif;
+}
+.tel-cont-link-content {
+  @apply pr-14;
+}
+
+@media (max-width: 1860px) and (min-width: 1841px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-8 px-20 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[4rem];
+  }
+  .name-and-arrow img {
+    @apply w-[73px] h-[73px];
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-14;
+  }
+  .tel-cont-link-content {
+    @apply pr-14;
+  }
+}
+@media (max-width: 1680px) and (min-width: 1661px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-8 px-18 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[3.25rem];
+  }
+  .name-and-arrow img {
+    @apply w-[65px] h-[65px];
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-13 text-[24px];
+  }
+  .tel-cont-link-content {
+    @apply pr-13;
+  }
+}
+@media (max-width: 1660px) and (min-width: 1601px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-8 px-18 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[3.25rem];
+  }
+  .name-and-arrow img {
+    @apply w-[65px] h-[65px];
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-13 text-[24px];
+  }
+  .tel-cont-link-content {
+    @apply pr-13;
+  }
+}
+@media (max-width: 1600px) and (min-width: 1581px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-8 px-18 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .name-and-arrow img {
+    @apply w-[60px] h-[60px];
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-13 text-[22px];
+  }
+  .tel-cont-link-content {
+    @apply pr-13;
+  }
+}
+@media (max-width: 1580px) and (min-width: 1535px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-8 px-18 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .name-and-arrow img {
+    @apply w-[60px] h-[60px];
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-13 text-[22px];
+  }
+  .tel-cont-link-content {
+    @apply pr-13;
+  }
+}
+@media (max-width: 1534px) and (min-width: 1500px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-8 px-18 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .name-and-arrow img {
+    @apply w-[60px] h-[60px];
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-13 text-[22px];
+  }
+  .tel-cont-link-content {
+    @apply pr-13;
+  }
+}
+@media (max-width: 1500px) and (min-width: 1441px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-6 px-16 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[2.625rem];
+  }
+  .name-and-arrow img {
+    @apply w-12 h-12;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-10 text-[18px];
+  }
+  .tel-cont-link-content {
+    @apply pr-10;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1366px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-6 px-16 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[2.625rem];
+  }
+  .name-and-arrow img {
+    @apply w-12 h-12;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-10 text-[18px];
+  }
+  .tel-cont-link-content {
+    @apply pr-10;
+  }
+}
+@media (max-width: 1365px) and (min-width: 1281px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-6 px-16 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[2.625rem];
+  }
+  .name-and-arrow img {
+    @apply w-12 h-12;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-10 text-[18px];
+  }
+  .tel-cont-link-content {
+    @apply pr-10;
+  }
+}
+@media (max-width: 1280px) and (min-width: 1081px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-6 px-16 rounded-4xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-10;
+  }
+  .contact-text-heading {
+    @apply text-[2.25rem];
+  }
+  .name-and-arrow img {
+    @apply w-10 h-10;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-8 text-[18px];
+  }
+  .tel-cont-link-content {
+    @apply pr-8;
+  }
+}
+@media (max-width: 1080px) and (min-width: 1024px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-6 px-12 rounded-2xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[1.875rem];
+  }
+  .name-and-arrow img {
+    @apply w-8 h-8;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-8 text-[15px];
+  }
+  .tel-cont-link-content {
+    @apply pr-8;
+  }
+}
+@media (max-width: 1023px) and (min-width: 900px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-4.5 px-10 rounded-2xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[1.75rem];
+  }
+  .name-and-arrow img {
+    @apply w-8 h-8;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-6 text-[14px] py-1.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-6;
+  }
+}
+@media (max-width: 899px) and (min-width: 861px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-4.5 px-10 rounded-2xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[1.75rem];
+  }
+  .name-and-arrow img {
+    @apply w-8 h-8;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-6 text-[14px] py-1.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-6;
+  }
+}
+@media (max-width: 860px) and (min-width: 840px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-4.5 px-10 rounded-2xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[1.75rem];
+  }
+  .name-and-arrow img {
+    @apply w-8 h-8;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-6 text-[14px] py-1.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-6;
+  }
+}
+@media (max-width: 840px) and (min-width: 740px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-8 rounded-2xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[1.25rem];
+  }
+  .name-and-arrow img {
+    @apply w-6 h-6;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-4 text-[12px] py-1.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-4;
+  }
+}
+@media (max-width: 740px) and (min-width: 660px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-8 rounded-2xl w-full;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[1.25rem];
+  }
+  .name-and-arrow img {
+    @apply w-6 h-6;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-4 text-[12px] py-1.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-4;
+  }
+}
+@media (max-width: 659px) and (min-width: 581px) {
+  .contact-heding-contact-book {
+    @apply flex items-center justify-between gap-10 bg-(--c-1) text-(--c-2) py-2 px-4 rounded-xl w-full flex-row;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[1rem];
+  }
+  .name-and-arrow img {
+    @apply w-4 h-4;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l border-l-(--c-w) pl-2 text-[10px] py-0.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-2;
+  }
+}
+@media (max-width: 580px) and (min-width: 481px) {
+  .contact-heding-contact-book {
+    @apply flex items-start justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-4 rounded-xl w-full flex-col;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .contact-form-conatiner {
+    @apply px-10;
+  }
+  .name-and-arrow img {
+    @apply w-4 h-4 hidden;
+  }
+  .other-contacts {
+    @apply flex flex-col gap-3 mt-6 mb-2;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l-0 border-l-(--c-w) pl-2 text-[12px] py-0.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-2;
+  }
+}
+@media (max-width: 480px) and (min-width: 431px) {
+  .contact-heding-contact-book {
+    @apply flex items-start justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-4 rounded-xl w-full flex-col;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-6;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .contact-form-conatiner {
+    @apply px-4;
+  }
+  .name-and-arrow img {
+    @apply w-4 h-4 hidden;
+  }
+  .other-contacts {
+    @apply flex flex-col gap-3 mt-0 mb-2;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l-0 border-l-(--c-w) pl-2 text-[16px] py-0.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-2;
+  }
+}
+@media (max-width: 430px) and (min-width: 401px) {
+  .contact-heding-contact-book {
+    @apply flex items-start justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-4 rounded-xl w-full flex-col;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-5;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .contact-form-conatiner {
+    @apply px-4;
+  }
+  .name-and-arrow img {
+    @apply w-4 h-4 hidden;
+  }
+  .other-contacts {
+    @apply flex flex-col gap-2 mt-0 mb-2;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l-0 border-l-(--c-w) pl-2 text-[16px] py-0.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-2;
+  }
+}
+@media (max-width: 400px) and (min-width: 391px) {
+  .contact-heding-contact-book {
+    @apply flex items-start justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-4 rounded-xl w-full flex-col;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-8;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .contact-form-conatiner {
+    @apply px-4;
+  }
+  .name-and-arrow img {
+    @apply w-4 h-4 hidden;
+  }
+  .other-contacts {
+    @apply flex flex-col gap-2 mt-8 mb-2;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l-0 border-l-(--c-w) pl-2 text-[16px] py-0.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-2;
+  }
+}
+@media (max-width: 390px) and (min-width: 360px) {
+  .contact-heding-contact-book {
+    @apply flex items-start justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-4 rounded-xl w-full flex-col;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-8;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .contact-form-conatiner {
+    @apply px-4;
+  }
+  .name-and-arrow img {
+    @apply w-4 h-4 hidden;
+  }
+  .other-contacts {
+    @apply flex flex-col gap-2 mt-8 mb-2;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l-0 border-l-(--c-w) pl-2 text-[16px] py-0.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-2;
+  }
+}
+@media (max-width: 359px) and (min-width: 280px) {
+  .contact-heding-contact-book {
+    @apply flex items-start justify-between gap-10 bg-(--c-1) text-(--c-2) py-4 px-4 rounded-xl w-full flex-col;
+  }
+  .name-and-arrow {
+    @apply flex items-center gap-8;
+  }
+  .contact-text-heading {
+    @apply text-[3rem];
+  }
+  .contact-form-conatiner {
+    @apply px-4;
+  }
+  .name-and-arrow img {
+    @apply w-4 h-4 hidden;
+  }
+  .other-contacts {
+    @apply flex flex-col gap-2 mt-8 mb-2;
+  }
+  .other-contacts a {
+    @apply text-(--c-w) border-l-0 border-l-(--c-w) pl-2 text-[16px] py-0.5;
+  }
+  .tel-cont-link-content {
+    @apply pr-2;
+  }
+}
