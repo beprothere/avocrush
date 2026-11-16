@@ -1,18 +1,7 @@
-import { client } from "@/sanity/lib/client";
+import { heroBanner } from "@/content/heroBanner";
 import Image from "next/image";
-import prd1 from "@/../public/img/prd1.png";
 
-const MobBanner = async () => {
-  const heroBanner = await client.fetch(`
-    *[_type == "heroBanner"]{
-      heading,
-      description,
-      ctaSlug,
-      "bgImageUrl": bgImage.asset->url,
-      "imageUrl": image.asset->url
-    }[0]
-  `);
-
+const MobBanner = () => {
   return (
     <div className="Mob-banner-container">
       {heroBanner && (
@@ -20,7 +9,7 @@ const MobBanner = async () => {
           <div className="relative image-box-banner">
             {heroBanner.bgImageUrl && (
               <Image
-                src={heroBanner.bgImageUrl}
+                src="/img/maskgroup.png"
                 alt="Mob-Hero-bg-Image"
                 width={300}
                 height={300}
@@ -30,7 +19,7 @@ const MobBanner = async () => {
 
             <picture className="overlay-jarr-pic-box">
               <Image
-                src={prd1}
+                src="/img/prd1.png"
                 alt="Hero-jarr-Image"
                 width={100}
                 height={100}
@@ -39,11 +28,13 @@ const MobBanner = async () => {
             </picture>
           </div>
 
-          <h2 className="MobBanner_heading">{heroBanner.heading}</h2>
+          <h2 className="MobBanner_heading">Smooth. Green. Irresistible.</h2>
 
           <div className="Mob-desc-box-home-banner-box">
             <p className="Mob-desc-box-home-banner-txt font-ofmedium">
-              {heroBanner.description}
+              A smooth, creamy avocado spread with real chunks. Made from real,
+              ripe avocados, crafted for those who appreciate pure, honest
+              flavour.
             </p>
           </div>
         </div>

@@ -1,44 +1,34 @@
-import { client } from "@/sanity/lib/client";
+import { heroBanner } from "@/content/heroBanner";
 import Image from "next/image";
-import prd1 from "@/../public/img/prd1.png";
 
-const HeroBanner = async () => {
-  const heroBanner = await client.fetch(`
-    *[_type == "heroBanner"]{
-      heading,
-      description,
-      ctaSlug,
-      "bgImageUrl": bgImage.asset->url,
-      "imageUrl": image.asset->url
-    }[0]
-  `);
-
+const HeroBanner = () => {
   return (
     <div className="hero-banner-container">
       {heroBanner && (
         <div
           className="hero-banner-box"
           style={{
-            backgroundImage: `url(${heroBanner.bgImageUrl})`,
+            backgroundImage: `url(/img/hero-img.jpg)`,
           }}
         >
           <div className="banner-heading-bg-box"></div>
-          <h2 className="heroBanner_heading">
-            {heroBanner.heading}
-          </h2>
+          <h2 className="heroBanner_heading">Smooth. Green. Irresistible.</h2>
 
           <div className="desc-box-home-banner-box">
-            <p className="desc-box-home-banner-txt font-ofmedium">{heroBanner.description}</p>
+            <p className="desc-box-home-banner-txt font-ofmedium">
+              A smooth, creamy avocado spread with real chunks. Made from real,
+              ripe avocados, crafted for those who appreciate pure, honest
+              flavour. 
+            </p>
           </div>
 
-          
-            <Image
-              src={prd1}
-              alt="Hero Image"
-              width={300}
-              height={300}
-              className="herro-overlay-image"
-            />
+          <Image
+            src="/img/prd1.png"
+            alt="Hero Image"
+            width={300}
+            height={300}
+            className="herro-overlay-image"
+          />
         </div>
       )}
     </div>
